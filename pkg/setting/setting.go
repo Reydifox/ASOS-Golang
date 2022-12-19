@@ -1,11 +1,6 @@
 package setting
 
-import (
-	"log"
-	"time"
-
-	"github.com/go-ini/ini"
-)
+import "time"
 
 type App struct {
 	PageSize  int
@@ -29,8 +24,6 @@ type Server struct {
 }
 
 var ServerSetting = &Server{}
-
-var cfg *ini.File
 
 // Setup initialize the configuration instance
 func Setup() {
